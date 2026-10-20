@@ -1,0 +1,1084 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catálogo Mantoz Fut</title>
+<meta name="description" content="Camisas de clubes, seleções e retrô. Escolha o tamanho, personalize e peça pelo WhatsApp.">
+<meta name="theme-color" content="#0a0a0a">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://pub-7260cd89021248db8be3a81c9e70f681.r2.dev" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+[hidden]{display:none!important}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+:root{--ink:#0a0a0a;--paper:#ffffff;--soft:#f4f4f4;--mid:#6b6b6b;--line:#e4e4e4;--accent:#c41e3a}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:130px}
+body{font-family:'Inter',system-ui,sans-serif;color:var(--ink);background:var(--paper);font-size:15px;line-height:1.5;color-scheme:light}
+button,a{font:inherit;color:inherit}
+button{cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+h1,h2,h3{font-family:'Archivo Black',sans-serif;font-weight:400;text-transform:uppercase;letter-spacing:.01em;line-height:1.05;text-wrap:balance}
+
+.pular{position:absolute;left:10px;top:-60px;z-index:99;background:#fff;color:var(--ink);padding:10px 14px;border-radius:8px;font-weight:700}
+.pular:focus{top:10px}
+/* cabeçalho */
+.top{position:sticky;top:0;z-index:20;background:var(--ink);color:#fff}
+.top-in{display:flex;align-items:center;flex-wrap:wrap;gap:10px 12px;padding:10px 14px;max-width:1280px;margin:0 auto}
+@media (min-width:900px){.top-in{padding:14px 24px;gap:20px}}
+.faixa{overflow:hidden;background:#161616;border-bottom:1px solid #262626;font-size:13px;font-weight:600;white-space:nowrap;color:#f2f2f2}
+.faixa-trilho{display:inline-flex;padding:8px 0;animation:faixa 26s linear infinite;will-change:transform}
+.faixa-trilho span{padding-right:44px;position:relative}
+.faixa-trilho span::after{content:"";position:absolute;right:18px;top:50%;width:6px;height:6px;margin-top:-3px;border-radius:50%;background:var(--accent)}
+@keyframes faixa{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.marca{flex:1;display:flex;align-items:center;min-width:0}
+.marca a{display:inline-flex;align-items:center}
+.marca img{display:block;height:56px;width:auto}
+.busca-top{order:10;flex:1 1 100%}
+.busca-top .busca-wrap{position:relative;display:flex;align-items:center}
+.busca-top svg{position:absolute;left:14px;color:#9a9a9a;width:18px;height:18px;pointer-events:none}
+.busca-top input{width:100%;height:44px;font:inherit;font-size:15px;padding:0 14px 0 42px;border:1px solid #2a2a2a;border-radius:999px;background:#171717;color:#fff}
+.busca-top input::placeholder{color:#9a9a9a}
+.busca-top input:focus-visible{outline-color:var(--accent)}
+.btn-pedido{flex-shrink:0}
+@media (min-width:900px){
+  .marca{flex:0 0 auto}
+  .marca img{height:72px}
+  .busca-top{order:0;flex:1 1 auto;max-width:560px;margin:0}
+  .busca-top input{height:46px;font-size:16px}
+}
+.btn-pedido{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;border:0;border-radius:999px;padding:11px 18px;font-weight:700;font-size:14px;min-height:44px}
+.btn-pedido:hover{background:#a4162f}
+.btn-pedido .n{background:#fff;color:var(--ink);border-radius:999px;min-width:24px;height:24px;display:inline-grid;place-items:center;font-size:13px;padding:0 6px;font-variant-numeric:tabular-nums}
+@media (min-width:900px){.btn-pedido{padding:12px 22px;font-size:15px;min-height:46px}}
+.menu{display:flex;gap:4px;overflow-x:auto;padding:0 12px;scrollbar-width:none;border-top:1px solid #222;max-width:1280px;margin:0 auto}
+@media (min-width:900px){.menu{padding:0 24px;gap:10px}}
+.menu::-webkit-scrollbar{display:none}
+.menu a,.menu button{flex-shrink:0;background:none;border:0;border-bottom:3px solid transparent;color:#bdbdbd;padding:12px 10px 10px;font-size:15px;font-weight:700;text-decoration:none;white-space:nowrap}
+.menu a[aria-current="true"],.menu button[aria-pressed="true"]{color:#fff;border-bottom-color:var(--accent)}
+
+/* hero */
+.hero{background:var(--ink)}
+.hero-banner{display:block;width:100%;padding:0;border:0;background:none;cursor:pointer;animation:entrar .6s cubic-bezier(.2,.7,.2,1) both}
+.hero-banner img{display:block;width:100%;height:auto}
+@media (min-width:700px){
+  .hero-banner{max-width:1280px;margin:0 auto}
+}
+/* busca e filtros */
+.barra{max-width:1280px;margin:0 auto;padding:12px 14px;display:grid;gap:10px;background:var(--paper);border-bottom:1px solid var(--line)}
+@media (min-width:900px){.barra{padding:14px 24px}}
+.barra input{width:100%;height:42px;font:inherit;font-size:16px;padding:0 14px;border:1px solid #cfcfcf;border-radius:999px;background:#fff}
+.barra input::placeholder{color:#8a8a8a}
+.ligas{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none}
+.ligas::-webkit-scrollbar{display:none}
+.ligas button{flex-shrink:0;border:1px solid #cfcfcf;background:#fff;padding:8px 12px;border-radius:999px;font-size:13px;cursor:pointer}
+.ligas button[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.linha{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:13px;color:var(--mid);flex-wrap:wrap}
+.linha select{font:inherit;font-size:13px;padding:6px 8px;border:1px solid #cfcfcf;border-radius:8px;color:var(--ink);background:#fff}
+
+.frete{font-size:13px;font-weight:600;text-align:center;color:var(--ink)}
+/* grade */
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px 12px;padding:14px 10px 24px}
+@media (min-width:700px){.grid{grid-template-columns:repeat(3,1fr);gap:18px;padding:18px 16px 30px;max-width:1180px;margin:0 auto}}
+@media (min-width:1100px){.grid{grid-template-columns:repeat(4,1fr);max-width:1280px}}
+@media (min-width:1400px){.grid{grid-template-columns:repeat(5,1fr)}}
+.card{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;scroll-margin-top:170px;transition:transform .2s ease,box-shadow .2s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.08)}
+.card-link{display:flex;flex-direction:column;color:inherit;text-decoration:none;flex:1}
+.main{aspect-ratio:1/1;background:var(--soft);display:grid;place-items:center;overflow:hidden}
+.main img{width:100%;height:100%;object-fit:contain;transition:transform .3s ease}
+.card:hover .main img{transform:scale(1.03)}
+.corpo{padding:12px 12px 14px;display:flex;flex-direction:column;gap:6px;flex:1}
+.meta{font-size:12px;color:var(--mid);text-transform:uppercase;letter-spacing:.03em;font-weight:600}
+.nome{font-weight:600;font-size:14px;line-height:1.3;text-wrap:balance;min-height:2.6em;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.preco{font-family:'Archivo Black',sans-serif;font-size:19px;font-variant-numeric:tabular-nums;margin-top:auto}
+.preco small{display:block;font-family:'Inter',sans-serif;font-size:12px;color:var(--mid);font-weight:400}
+.vazio{padding:40px 14px;text-align:center;color:var(--mid);grid-column:1/-1}
+.mais{display:block;margin:0 auto 30px;padding:12px 22px;border:1px solid var(--ink);background:#fff;border-radius:10px}
+
+/* página do produto */
+.pagina-produto{max-width:1180px;margin:0 auto;padding:16px 14px 40px}
+@media (min-width:900px){.pagina-produto{padding:24px 20px 60px}}
+.pp-voltar{display:inline-flex;align-items:center;gap:6px;margin-bottom:14px;color:var(--mid);font-weight:600;text-decoration:none;font-size:14px}
+.pp-voltar:hover{color:var(--accent)}
+.pp-grid{display:grid;grid-template-columns:1fr;gap:24px}
+@media (min-width:900px){.pp-grid{grid-template-columns:minmax(0,1fr) 400px;gap:48px;align-items:start}}
+.pp-galeria{display:grid;gap:10px}
+.pp-foto-principal{aspect-ratio:1/1;background:var(--soft);border-radius:14px;overflow:hidden}
+.pp-foto-principal button{display:block;width:100%;height:100%;padding:0;border:0;background:none;cursor:zoom-in}
+.pp-foto-principal img{width:100%;height:100%;object-fit:contain;display:block}
+.pp-thumbs{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding-bottom:4px}
+.pp-thumbs::-webkit-scrollbar{display:none}
+.pp-thumbs button{flex-shrink:0;width:72px;height:72px;border:2px solid var(--line);border-radius:8px;background:var(--soft);padding:0;overflow:hidden;cursor:pointer}
+.pp-thumbs button[aria-pressed="true"]{border-color:var(--accent)}
+.pp-thumbs img{width:100%;height:100%;object-fit:cover;display:block}
+.pp-info{display:flex;flex-direction:column;gap:16px}
+@media (min-width:900px){.pp-info{position:sticky;top:160px}}
+.pp-meta{font-size:12px;color:var(--mid);text-transform:uppercase;letter-spacing:.05em;font-weight:600}
+.pp-nome{font-size:26px;line-height:1.05}
+@media (min-width:900px){.pp-nome{font-size:34px}}
+.pp-preco{font-family:'Archivo Black',sans-serif;font-size:28px;font-variant-numeric:tabular-nums}
+.pp-preco small{display:block;font-family:'Inter',sans-serif;font-size:13px;color:var(--mid);font-weight:400;margin-top:2px}
+.pp-brinde{background:#1f7a3a;color:#fff;padding:12px 14px;border-radius:10px;font-size:14px;font-weight:600;display:flex;align-items:center;gap:8px}
+.pp-tams-tit{font-size:14px;font-weight:700;display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:8px}
+.pp-estoque{font-size:13px;color:#9a6b00;background:#fff5db;border:1px solid #f0d890;padding:10px 12px;border-radius:8px;font-weight:500}
+.pp-add{min-height:54px;border:0;background:var(--ink);color:#fff;font-weight:700;padding:14px;border-radius:10px;font-size:16px;transition:background-color .2s ease;width:100%}
+.pp-add.ok{background:#1f7a3a}
+.pp-add:disabled{background:#c4c4c4;cursor:not-allowed}
+.pp-descricao{margin-top:40px;max-width:720px}
+.pp-descricao h3{font-size:22px;margin-bottom:4px}
+.pp-descricao .secao{padding:18px 0;border-bottom:1px solid var(--line)}
+.pp-descricao .secao:last-child{border-bottom:0}
+.pp-descricao .secao h4{font-family:'Archivo Black',sans-serif;font-weight:400;font-size:14px;text-transform:uppercase;letter-spacing:.04em;margin-bottom:10px;color:var(--ink)}
+.pp-descricao .secao p{font-size:14.5px;line-height:1.65;color:#333}
+.pp-descricao .secao ul{list-style:none;display:grid;gap:8px;margin-top:4px}
+.pp-descricao .secao li{font-size:14.5px;line-height:1.5;color:#333;padding-left:20px;position:relative}
+.pp-descricao .secao li::before{content:"";position:absolute;left:0;top:9px;width:7px;height:7px;background:var(--accent);border-radius:50%}
+
+/* blocos do produto: tams, pers, add */
+.link{background:none;border:0;padding:0;color:var(--accent);text-decoration:underline;font-size:13px;font-weight:600;cursor:pointer}
+.tams{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.tams button{min-width:0;min-height:48px;padding:8px;border:1px solid #bdbdbd;background:#fff;border-radius:8px;font-weight:600;font-size:15px;transition:background-color .15s ease,color .15s ease,transform .15s ease}
+.tams button:active{transform:scale(.94)}
+.tams button[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.pers{border:1px dashed #bdbdbd;border-radius:10px;padding:12px;display:flex;flex-direction:column;gap:10px;font-size:14px}
+.pers .on{display:flex;gap:10px;align-items:flex-start;cursor:pointer}
+.pers .on input{width:20px;height:20px;margin-top:1px;flex-shrink:0}
+.pers .campos{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pers .campos label{display:flex;flex-direction:column;gap:4px;font-size:12px;color:var(--mid)}
+.pers input[type=text],.pers input[type=number]{font:inherit;font-size:16px;padding:10px 12px;border:1px solid #bdbdbd;border-radius:8px;width:100%;color:var(--ink)}
+.pers .erro{color:var(--accent);font-size:12.5px}
+
+
+/* lightbox */
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.94);display:flex;align-items:center;justify-content:center;z-index:60;padding:12px;overscroll-behavior:contain;visibility:hidden;opacity:0;transition:opacity .2s ease,visibility 0s linear .2s}
+.lightbox.open{visibility:visible;opacity:1;transition:opacity .2s ease}
+.lightbox img{max-width:100%;max-height:100%;object-fit:contain;touch-action:pan-y;user-select:none}
+#lbClose{position:absolute;top:12px;right:12px;width:42px;height:42px;border:0;border-radius:50%;background:#fff;font-size:22px}
+.lbnav{position:absolute;top:50%;transform:translateY(-50%);width:34px;height:34px;border:0;border-radius:50%;background:rgba(255,255,255,.75);font-size:20px;line-height:1}
+#lbPrev{left:8px}
+#lbNext{right:8px}
+.lbcount{position:absolute;bottom:14px;left:0;right:0;text-align:center;color:#fff;font-size:13px}
+
+/* gaveta do pedido */
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:50;visibility:hidden;opacity:0;transition:opacity .25s ease,visibility 0s linear .25s}
+.overlay.open{visibility:visible;opacity:1;transition:opacity .25s ease}
+.gaveta{overscroll-behavior:contain;position:absolute;right:0;top:0;bottom:0;width:min(360px,100%);background:#fff;display:flex;flex-direction:column;transform:translateX(100%);transition:transform .3s cubic-bezier(.2,.7,.2,1)}
+.overlay.open .gaveta{transform:none}
+.gaveta-h{padding:14px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
+.gaveta-h h2{font-size:18px}
+.gaveta-h button{border:0;background:none;font-size:24px;padding:4px 8px}
+.gaveta-b{flex:1;overflow:auto;padding:6px 14px;overscroll-behavior:contain}
+.linha-item{display:grid;grid-template-columns:60px 1fr;gap:10px;padding:12px 0;border-bottom:1px solid var(--line)}
+.linha-item img{width:60px;height:60px;object-fit:cover;border-radius:8px;background:var(--soft)}
+.linha-item .t{font-weight:600;font-size:14px}
+.linha-item .s{font-size:13px;color:var(--mid)}
+.linha-item .p{font-size:13px;margin-top:2px}
+.qtd{display:flex;align-items:center;gap:8px;margin-top:6px;flex-wrap:wrap}
+.qtd .q{width:34px;height:34px;border:1px solid #bdbdbd;background:#fff;border-radius:8px;font-size:16px}
+.qtd .rm{width:auto;height:auto;border:0;background:none;color:var(--accent);font-size:13px;text-decoration:underline;margin-left:8px;padding:4px}
+.gaveta-f{padding:14px 14px 22px;border-top:1px solid var(--line);display:grid;gap:10px}
+.tot{display:flex;justify-content:space-between;font-weight:700;font-size:16px}
+.nota{font-size:12px;color:var(--mid)}
+.envia{display:block;text-align:center;background:#25d366;color:#fff;font-weight:700;text-decoration:none;padding:14px;border-radius:12px}
+.envia[aria-disabled="true"]{background:#c4c4c4;pointer-events:none}
+.envia small{display:block;font-weight:400;font-size:12px}
+
+/* guia de tamanhos */
+.pagina{padding:18px 14px 30px;max-width:720px;margin:0 auto}
+@media (min-width:700px){.pagina h2{font-size:22px}.pagina{padding:24px 16px 40px}}
+.pagina .voltar{display:inline-block;margin-bottom:12px;color:var(--accent);font-weight:600;text-decoration:none}
+.pagina h2{font-size:26px;margin-bottom:6px}
+.pagina .sub{color:var(--mid);margin-bottom:16px}
+.guia-img{width:100%;max-width:520px;height:auto;border-radius:12px;border:1px solid var(--line);display:block;margin:0 auto 18px}
+.abas{display:flex;gap:8px;margin-bottom:12px}
+.abas button{flex:1;padding:12px;border:1px solid #bdbdbd;background:#fff;border-radius:10px;font-weight:700}
+.abas button[aria-selected="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+.tabela-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px}
+table{width:100%;border-collapse:collapse;font-size:12px;min-width:400px}
+th,td{padding:7px 4px;text-align:center;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}
+th:first-child,td:first-child{text-align:left;font-weight:600}
+th{background:var(--soft);font-family:'Archivo Black',sans-serif;font-weight:400}
+.explica{margin-top:16px;display:grid;gap:10px;font-size:14px}
+.explica p{color:#333}
+
+/* rodapé */
+.rodape{background:var(--ink);color:#d6d6d6;padding:28px 16px 40px;margin-top:20px}
+.rodape h3{font-size:18px;color:#fff;margin-bottom:6px}
+.rodape .lema{font-size:14px;color:#9a9a9a;margin-bottom:18px}
+.cidades{display:grid;gap:10px;margin-bottom:18px}
+.brinde-aviso{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:10px 12px 0;padding:12px 14px;border-radius:10px;background:var(--ink);color:#fff;font-size:14px;font-weight:600}
+.brinde-aviso button{flex-shrink:0;min-height:36px;padding:0 12px;border:1px solid #fff;border-radius:8px;background:none;color:#fff;font-weight:600}
+.hint-promo{position:fixed;left:12px;right:12px;bottom:12px;z-index:40;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 16px;border-radius:12px;background:var(--ink);color:#fff;font-size:14px;font-weight:600;box-shadow:0 10px 25px rgba(0,0,0,.25);animation:entrarBaixo .3s cubic-bezier(.2,.7,.2,1) both}
+.hint-promo b{color:var(--accent)}
+.hint-promo button{flex-shrink:0;min-height:40px;padding:0 14px;border:0;border-radius:8px;background:var(--accent);color:#fff;font-weight:700;font-size:14px}
+@media (min-width:700px){.hint-promo{left:auto;right:20px;bottom:20px;max-width:420px}}
+@keyframes entrarBaixo{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@media (min-width:700px){.cidades{grid-template-columns:1fr 1fr}}
+.cidade{border:1px solid #2c2c2c;border-radius:12px;padding:14px}
+.cidade b{display:block;font-family:'Archivo Black',sans-serif;font-weight:400;color:#fff;font-size:16px;text-transform:uppercase}
+.cidade span{display:block;font-size:14px;color:#bdbdbd;margin-top:4px}
+.rodape .ajuda{font-size:13px;color:#9a9a9a;line-height:1.6}
+.rodape .direitos{margin-top:18px;font-size:12px;color:#777}
+.rodape nav{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:16px}
+.rodape nav a{color:#fff;text-decoration:none;font-size:14px;font-weight:600}
+
+
+/* SKELETON */
+@keyframes shimmer{0%{background-position:-200% 0}100%{background-position:200% 0}}
+.skel{display:block;background:linear-gradient(90deg,#ececec 25%,#e0e0e0 50%,#ececec 75%);background-size:200% 100%;animation:shimmer 1.6s infinite;border-radius:4px}
+.skel-card{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#fff;height:100%}
+.skel-img{aspect-ratio:1/1}
+.skel-linha{height:11px;margin:10px 12px 0}
+.skel-linha.w80{width:80%}
+.skel-linha.w55{width:55%}
+.skel-preco{height:18px;width:42%;margin:8px 12px 16px}
+
+/* FRETE GRÁTIS — barra no carrinho */
+.frete-progresso{margin-bottom:6px}
+.frete-progresso .ft{font-size:12.5px;color:var(--mid);margin-bottom:5px;font-weight:500}
+.frete-progresso.ok .ft{color:#1f7a3a;font-weight:600}
+.frete-progresso .trilho{height:5px;background:#e4e4e4;border-radius:3px;overflow:hidden}
+.frete-progresso .trilho span{display:block;height:100%;background:var(--accent);transition:width .4s ease;border-radius:3px}
+.frete-progresso.ok .trilho span{background:#1f7a3a}
+
+@keyframes entrar{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes pulsar{0%{transform:scale(1)}40%{transform:scale(1.25)}100%{transform:scale(1)}}
+.card.entra{animation:entrar .5s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--i,0) * 70ms)}
+.btn-pedido .n.bump{animation:pulsar .35s ease-out}
+@media (prefers-reduced-motion: reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+
+<a class="pular" href="#vitrine">Pular para as camisas</a>
+<header class="top">
+  <div class="faixa" aria-label="Avisos da loja">
+    <div class="faixa-trilho">
+      <span>Compre 4 camisas e leve uma Torcedor de graça</span>
+      <span>Frete grátis a partir de 4 camisas</span>
+      <span>Lançamentos 2026/27 já disponíveis</span>
+      <span aria-hidden="true">Compre 4 camisas e leve uma Torcedor de graça</span>
+      <span aria-hidden="true">Frete grátis a partir de 4 camisas</span>
+      <span aria-hidden="true">Lançamentos 2026/27 já disponíveis</span>
+    </div>
+  </div>
+  <div class="top-in">
+    <h1 class="marca"><a href="#/"><img src="logo-mantoz.png" alt="Mantoz Fut" width="58" height="56"></a></h1>
+    <div class="busca-top">
+      <label class="sr-only" for="q">Buscar camisa</label>
+      <div class="busca-wrap">
+        <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input id="q" name="busca" type="search" placeholder="Busque time, liga ou modelo…" autocomplete="off" spellcheck="false">
+      </div>
+    </div>
+    <button class="btn-pedido" id="abrirPedido" type="button" aria-haspopup="dialog">Meu pedido <span class="n" id="cartCount">0</span></button>
+  </div>
+  <nav class="menu" aria-label="Categorias">
+    <button type="button" data-tipo="" aria-pressed="true">Todas</button>
+    <button type="button" data-tipo="lancamentos">Lançamentos</button>
+    <button type="button" data-tipo="selecoes">Seleções</button>
+    <button type="button" data-tipo="player">Player</button>
+    <button type="button" data-tipo="torcedor">Torcedor</button>
+    <button type="button" data-tipo="retro">Retrô</button>
+    <button type="button" data-tipo="feminina">Femininas</button>
+    <button type="button" data-tipo="infantil">Infantis</button>
+    <a href="#/tamanhos" data-rota="tamanhos">Tamanhos</a>
+  </nav>
+</header>
+
+<div id="vitrine">
+  <section class="hero" id="hero" aria-label="Destaque: lançamentos">
+    <button type="button" class="hero-banner" id="heroLanc" aria-label="Vista o seu time. Ver lançamentos">
+      <img src="hero.jpg" width="2000" height="1116" alt="" fetchpriority="high">
+    </button>
+  </section>
+  <div class="barra">
+    <div class="ligas" id="ligas" role="group" aria-label="Filtrar por liga"></div>
+    <div class="linha"><span id="info" aria-live="polite"></span>
+      <label>Ordenar <select id="ordem">
+        <option value="popularidade">Popularidade</option>
+        <option value="recentes">Mais recentes</option>
+        <option value="menor">Menor preço</option>
+        <option value="maior">Maior preço</option>
+      </select></label>
+    </div>
+  </div>
+  <div class="brinde-aviso" id="brindeAviso" role="status" hidden><span>Escolha a sua camisa Torcedor grátis e toque em Adicionar.</span><button type="button" id="brindeCancelar">Cancelar</button></div>
+  <div class="hint-promo" id="hintPromo" role="status" aria-live="polite" hidden></div>
+  <main class="grid" id="grid" tabindex="-1"><div class="skel-card"><div class="skel skel-img"></div><div class="skel skel-linha w80"></div><div class="skel skel-linha w55"></div><div class="skel skel-preco"></div></div><div class="skel-card"><div class="skel skel-img"></div><div class="skel skel-linha w80"></div><div class="skel skel-linha w55"></div><div class="skel skel-preco"></div></div><div class="skel-card"><div class="skel skel-img"></div><div class="skel skel-linha w80"></div><div class="skel skel-linha w55"></div><div class="skel skel-preco"></div></div><div class="skel-card"><div class="skel skel-img"></div><div class="skel skel-linha w80"></div><div class="skel skel-linha w55"></div><div class="skel skel-preco"></div></div><div class="skel-card"><div class="skel skel-img"></div><div class="skel skel-linha w80"></div><div class="skel skel-linha w55"></div><div class="skel skel-preco"></div></div><div class="skel-card"><div class="skel skel-img"></div><div class="skel skel-linha w80"></div><div class="skel skel-linha w55"></div><div class="skel skel-preco"></div></div><div class="skel-card"><div class="skel skel-img"></div><div class="skel skel-linha w80"></div><div class="skel skel-linha w55"></div><div class="skel skel-preco"></div></div><div class="skel-card"><div class="skel skel-img"></div><div class="skel skel-linha w80"></div><div class="skel skel-linha w55"></div><div class="skel skel-preco"></div></div><div class="skel-card"><div class="skel skel-img"></div><div class="skel skel-linha w80"></div><div class="skel skel-linha w55"></div><div class="skel skel-preco"></div></div><div class="skel-card"><div class="skel skel-img"></div><div class="skel skel-linha w80"></div><div class="skel skel-linha w55"></div><div class="skel skel-preco"></div></div><div class="skel-card"><div class="skel skel-img"></div><div class="skel skel-linha w80"></div><div class="skel skel-linha w55"></div><div class="skel skel-preco"></div></div><div class="skel-card"><div class="skel skel-img"></div><div class="skel skel-linha w80"></div><div class="skel skel-linha w55"></div><div class="skel skel-preco"></div></div><div class="skel-card"><div class="skel skel-img"></div><div class="skel skel-linha w80"></div><div class="skel skel-linha w55"></div><div class="skel skel-preco"></div></div><div class="skel-card"><div class="skel skel-img"></div><div class="skel skel-linha w80"></div><div class="skel skel-linha w55"></div><div class="skel skel-preco"></div></div><div class="skel-card"><div class="skel skel-img"></div><div class="skel skel-linha w80"></div><div class="skel skel-linha w55"></div><div class="skel skel-preco"></div></div><div class="skel-card"><div class="skel skel-img"></div><div class="skel skel-linha w80"></div><div class="skel skel-linha w55"></div><div class="skel skel-preco"></div></div></main>
+  <div class="sr-only" id="aviso" aria-live="polite"></div>
+  <button class="mais" id="mais" type="button" hidden>Mostrar mais camisas</button>
+</div>
+
+<section id="pagina-produto" class="pagina-produto" hidden></section>
+
+<section id="pagina-tamanhos" class="pagina" hidden>
+  <a class="voltar" href="#/">← Voltar ao catálogo</a>
+  <h2>Tabela de tamanhos</h2>
+  <p class="sub">Compare as medidas com uma camisa que você já tem. Se ficar entre dois tamanhos, escolha o maior.</p>
+  <img class="guia-img" src="guia-tamanhos.webp" width="1116" height="2000" alt="Guia de tamanhos e diferenças entre a versão Jogador e a versão Torcedor" loading="lazy">
+  <div class="abas" role="tablist">
+    <button type="button" role="tab" aria-selected="true" data-versao="torcedor">Versão Torcedor</button>
+    <button type="button" role="tab" aria-selected="false" data-versao="jogador">Versão Jogador</button>
+  </div>
+  <div class="tabela-wrap" id="tabelaTam"></div>
+  <div class="explica" id="explicaVersao"></div>
+</section>
+
+<footer class="rodape">
+  <h3>Mantoz Fut</h3>
+  <p class="lema">Seu time. Seu estilo.</p>
+  <div class="cidades">
+    <div class="cidade"><b>Buritis · MG</b><span>(38) 98424-1631</span></div>
+    <div class="cidade"><b>Brasília · DF</b><span>(61) 8195-1368</span></div>
+  </div>
+  <nav>
+    <a href="#/">Catálogo</a>
+    <a href="#/tamanhos">Tamanhos</a>
+    <a href="#/" data-tipo-rodape="lancamentos">Lançamentos</a>
+  </nav>
+  <p class="ajuda">Para pedir, toque em “Meu pedido”, escolha os modelos e o tamanho, e envie o pedido pelo WhatsApp da cidade que preferir. O frete é grátis a partir de 4 camisas.</p>
+  <p class="direitos">© Mantoz Fut. Todos os direitos reservados.</p>
+</footer>
+
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Foto ampliada"><button type="button" id="lbClose" aria-label="Fechar">×</button><button type="button" class="lbnav" id="lbPrev" aria-label="Foto anterior">‹</button><img id="lbImg" alt=""><button type="button" class="lbnav" id="lbNext" aria-label="Próxima foto">›</button><div class="lbcount" id="lbCount"></div></div>
+
+<div class="overlay" id="overlay">
+  <section class="gaveta" role="dialog" aria-modal="true" aria-labelledby="pedidoTitulo">
+    <div class="gaveta-h"><h2 id="pedidoTitulo">Meu pedido</h2><button type="button" id="fecharPedido" aria-label="Fechar">×</button></div>
+    <div class="gaveta-b" id="pedidoCorpo"></div>
+    <div class="gaveta-f">
+      <div class="tot"><span>Total estimado</span><span id="pedidoTotal">R$ 0,00</span></div>
+      <div class="nota" id="pedidoNota" aria-live="polite"></div>
+      <a class="envia" id="enviaBsb" href="#" target="_blank" rel="noopener" aria-disabled="true">Enviar pedido para Brasília (DF)<small>(61) 8195-1368</small></a>
+      <a class="envia" id="enviaBur" href="#" target="_blank" rel="noopener" aria-disabled="true">Enviar pedido para Buritis (MG)<small>(38) 98424-1631</small></a>
+    </div>
+  </section>
+</div>
+
+<script>
+const WA_BURITIS = '5538984241631';
+const WA_BRASILIA = '556181951368';
+const VALOR_PERSONALIZACAO = 15;
+const PAGE = 24;
+const TAMANHOS = ['P', 'M', 'G', 'GG', 'XG', 'XXG'];
+const TAMANHOS_INFANTIL = ['16', '18', '20', '22', '24', '26', '28'];
+
+
+const TABELA = {
+  torcedor: {
+    linhas: [
+      ['Comprimento da camisa', [72, 73, 75, 77, 81, 83]],
+      ['Largura do ombro', [50, 52, 54, 56, 59, 61]],
+      ['Manga curta', [36.5, 38, 39, 41, 42, 44]],
+      ['Manga longa', [75.5, 77, 78.5, 80, 81, 82]],
+    ],
+    texto: 'Corte mais solto e confortável, com escudo bordado. Tecido um pouco mais pesado que o da versão Jogador. Ideal para usar no dia a dia.',
+  },
+  jogador: {
+    linhas: [
+      ['Comprimento da camisa', [70, 72, 74, 76, 78, 80]],
+      ['Tórax / peito', [46, 48, 50, 52, 54, 56]],
+      ['Largura do ombro', [46, 48, 50, 52, 54, 56]],
+      ['Comprimento da manga', [40.5, 41.9, 43.3, 44.7, 46.1, 47.5]],
+    ],
+    texto: 'Corte mais justo (atlético) e tecido mais leve e respirável. Logotipos aplicados por termocolagem. Ideal para quem busca o modelo dos jogadores.',
+  },
+};
+
+let todos = [];
+let filtrados = [];
+let mostrando = 0;
+let ligaAtiva = '';
+let tipoAtivo = '';
+let ordemAtual = 'popularidade';
+let escolhas = {};
+let personalizacao = {};
+let primeira = true;
+let qtdAnterior = null;
+let carrinho = [];
+try { carrinho = JSON.parse(localStorage.getItem('mantoz_catalogo_carrinho') || '[]'); } catch (e) { carrinho = []; }
+
+// ordem de popularidade dos clubes para a vitrine, voltada ao mercado brasileiro
+// quanto menor o índice, mais na frente aparece
+const CLUBES_POPULARES = [
+  // 1) Brasileirão - prioridade máxima para o público brasileiro
+  'Flamengo', 'Corinthians', 'Palmeiras', 'São Paulo', 'Santos',
+  'Vasco da Gama', 'Cruzeiro', 'Grêmio', 'Internacional', 'Atlético Mineiro',
+  // 2) Seleções (começando pelo Brasil)
+  'Brasil', 'Argentina', 'Portugal', 'França', 'Alemanha', 'Espanha', 'Inglaterra',
+  'Itália', 'México', 'Colômbia', 'Estados Unidos', 'Bélgica', 'Polônia',
+  // 3) Dois gigantes espanhóis
+  'Real Madrid', 'Barcelona', 'FC Barcelona',
+  // 3) Premier League (ingleses grandes)
+  'Manchester City', 'Manchester United', 'Liverpool', 'Arsenal', 'Chelsea', 'Tottenham',
+  // 4) Italianos grandes
+  'Juventus', 'AC Milan', 'Inter de Milão', 'Napoli', 'SSC Napoli', 'Roma',
+  // 5) Alemães e francês de peso
+  'Bayern de Munique', 'Borussia Dortmund', 'Paris Saint-Germain',
+  // 6) Outros europeus relevantes
+  'Atlético de Madrid', 'Sevilla', 'Real Betis', 'Lazio', 'Fiorentina',
+  'Olympique de Marselha', 'Olympique de Lyon', 'Eintracht Frankfurt',
+];
+const rankClube = (time) => {
+  const i = CLUBES_POPULARES.indexOf(time);
+  return i === -1 ? 999 : i;
+};
+
+const money = (v) => 'R$ ' + Number(v).toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const anoDe = (p) => parseInt(String(p.temporada || '').slice(0, 4), 10) || 0;
+
+function grupoPopularidade(p) {
+  if (/\bFeminina\b/.test(p.nome)) return 2;
+  if (/\bInfantil\b|\bBebê\b/.test(p.nome)) return 3;
+  if (p.categoria === 'Camisa Retrô') return 1;
+  return 0;
+}
+function rankPopularidade(a, b) {
+  return grupoPopularidade(a) - grupoPopularidade(b)
+    || rankClube(a.time) - rankClube(b.time)
+    || a.time.localeCompare(b.time, 'pt-BR')
+    || (anoDe(b) - anoDe(a))
+    || (a.categoria === 'Camisa Player' ? 0 : 1) - (b.categoria === 'Camisa Player' ? 0 : 1)
+    || a.preco - b.preco;
+}
+
+function intercalarTimes(lista) {
+  const filas = new Map();
+  for (const p of lista) {
+    if (!filas.has(p.time)) filas.set(p.time, []);
+    filas.get(p.time).push(p);
+  }
+  const grupos = [...filas.values()];
+  const saida = [];
+  for (let i = 0, restam = true; restam; i++) {
+    restam = false;
+    for (const fila of grupos) {
+      if (i < fila.length) { saida.push(fila[i]); restam = true; }
+    }
+  }
+  return saida;
+}
+function intercalarPopularidade(lista) {
+  const faixas = [0, 1, 2, 3].map((g) => lista.filter((p) => grupoPopularidade(p) === g));
+  return faixas.flatMap(intercalarTimes);
+}
+
+function versao(p) {
+  if (p.categoria === 'Camisa Player') return 'Player';
+  if (p.categoria === 'Camisa Torcedor') return 'Torcedor';
+  if (p.categoria === 'Camisa Retrô') return 'Retrô';
+  return p.categoria;
+}
+function descricaoCompleta(p) {
+  const nome = p.nome;
+  const isLonga = /Manga Longa/i.test(nome);
+  const isFeminina = /Feminina/i.test(nome);
+  const isCropped = /Cropped/i.test(nome);
+  const isInfantil = /Infantil/i.test(nome);
+  const isBebe = /Bebê/i.test(nome);
+  const isGoleiro = /Goleiro/i.test(nome);
+  const isEspecial = /Edição Especial/i.test(nome);
+  const isRetro = p.categoria === 'Camisa Retrô';
+  const isPlayer = p.categoria === 'Camisa Player';
+  const isTorcedor = p.categoria === 'Camisa Torcedor';
+  const secoes = [];
+
+  // Sobre o modelo
+  let sobre = '';
+  if (isPlayer) {
+    sobre = 'Esta é a versão Jogador (Player), idêntica à usada em campo pelos atletas do time. Linha premium de altíssima qualidade: corte atlético, tecido ultraleve e respirável, pensada para quem busca o modelo autêntico de jogo e desempenho esportivo real.';
+  } else if (isTorcedor) {
+    sobre = 'Esta é a versão Torcedor, feita para quem acompanha o clube. Nossa linha premium traz corte confortável, tecido de boa gramatura e acabamento refinado com escudo bordado. Vai bem no estádio, no churrasco, no bar e no dia a dia.';
+  } else if (isRetro) {
+    sobre = 'Esta é uma camisa Retrô, reedição fiel de um modelo marcante da história do clube. Mantém as cores, o escudo e os detalhes originais da época. Edição de colecionador, para quem viveu aquela temporada ou quer uma peça de história.';
+  }
+  if (isLonga) sobre += ' Esta é a variação de manga longa: o corpo da camisa é o mesmo, com mangas estendidas até o pulso, ideal para noites mais frias ou treinos noturnos.';
+  if (isFeminina) sobre += ' A modelagem feminina ajusta a cintura e os ombros, com caimento próximo ao corpo e silhueta valorizada.';
+  if (isCropped) sobre += ' A versão cropped tem corte curto na cintura, pensada para looks mais modernos.';
+  if (isInfantil) sobre += ' A modelagem infantil é pensada para o conforto da criança, com acabamento macio e tamanhos de 16 a 28.';
+  if (isBebe) sobre += ' Modelo bebê, em tamanhos reduzidos e tecido delicado, com acabamento confortável para o uso diário.';
+  if (isGoleiro) sobre += ' Modelo específico do goleiro, com cores próprias e reforços em áreas de impacto.';
+  if (isEspecial) sobre += ' Edição especial com detalhes exclusivos de design, lançada em ocasião marcante do clube.';
+  secoes.push({ titulo: 'Sobre esta camisa', texto: sobre });
+
+  // Tecido e acabamento
+  const material = [];
+  if (isPlayer) {
+    material.push('Tecido ultraleve e respirável, com tecnologia que afasta a umidade do corpo (perfil dry-fit).');
+    material.push('Costuras planas, sem relevo, para não interferir no movimento.');
+    material.push('Logotipos e escudo aplicados por termocolagem, sem bordado, para manter o peso baixo.');
+    material.push('Marca original: Nike, Adidas ou Puma conforme o patrocinador oficial do clube.');
+  } else if (isTorcedor) {
+    material.push('Tecido respirável de boa gramatura, toque macio e caimento confortável.');
+    material.push('Escudo bordado e detalhes com acabamento refinado.');
+    material.push('Durabilidade alta em uso frequente, mantém a forma e a cor após lavagens.');
+    material.push('Marca original: Nike, Adidas ou Puma conforme o patrocinador oficial do clube.');
+  } else if (isRetro) {
+    material.push('Tecido premium adaptado à modelagem retrô, próximo da camisa da época.');
+    material.push('Escudo e patrocinadores conforme a referência histórica.');
+    material.push('Acabamento cuidadoso, ideal para colecionadores e torcedores saudosistas.');
+  }
+  secoes.push({ titulo: 'Tecido e acabamento', itens: material });
+
+  // Tamanhos
+  const tams = [];
+  if (isInfantil) {
+    tams.push('Tamanhos infantis de 16 a 28 (de dois em dois), que atendem crianças de aproximadamente 4 a 14 anos.');
+    tams.push('Para acertar, compare com uma camisa que a criança já veste bem.');
+  } else if (isBebe) {
+    tams.push('Tamanhos de bebê, com modelagem reduzida.');
+    tams.push('Confira a tabela de medidas antes de pedir.');
+  } else {
+    tams.push('Tamanhos adultos de P a XXG.');
+    tams.push(isPlayer ? 'Caimento mais justo, próximo ao corpo. Em caso de dúvida, suba um tamanho.' : 'Caimento reto e solto, confortável. Em geral veste do tamanho esperado.');
+    tams.push('Compare com uma camisa que você já tem para acertar. A tabela de medidas está no menu Tamanhos.');
+  }
+  secoes.push({ titulo: 'Tamanhos e caimento', itens: tams });
+
+  // Personalização
+  secoes.push({
+    titulo: 'Personalização (opcional)',
+    itens: [
+      'Nome com até 12 letras nas costas, acima do número.',
+      'Número de 1 a 99 nas costas.',
+      'Aplicação por termocolagem, no padrão oficial do clube.',
+      'Acréscimo de R$ 15 por camisa personalizada.',
+    ],
+  });
+
+  // Cuidados
+  secoes.push({
+    titulo: 'Cuidados com a camisa',
+    itens: [
+      'Lave em água fria, do avesso, com sabão neutro.',
+      'Não use alvejante nem amaciante.',
+      'Seque à sombra. Não torça o tecido.',
+      'Passe a ferro em temperatura baixa, do avesso, sem encostar no escudo.',
+    ],
+  });
+
+  // Entrega e pagamento
+  secoes.push({
+    titulo: 'Pedido, entrega e pagamento',
+    itens: [
+      'Pedido feito pelo WhatsApp. A equipe confirma estoque, prazo e forma de pagamento.',
+      'Frete grátis a partir de 4 camisas no mesmo pedido.',
+      'Compre 4 camisas e leve a 5ª Torcedor de graça.',
+      'Retirada presencial em Buritis (MG) e Brasília (DF).',
+    ],
+  });
+
+  return secoes;
+}
+// resumo curto, usado em outros lugares se precisar
+function descricao(p) {
+  if (p.categoria === 'Camisa Player') return 'Versão Player: corte mais justo, tecido ultraleve e respirável, logos por termocolagem.';
+  if (p.categoria === 'Camisa Torcedor') return 'Versão Torcedor: corte confortável, escudo bordado e acabamento premium.';
+  if (p.categoria === 'Camisa Retrô') return 'Reedição retrô, com os detalhes da camisa original da época.';
+  return '';
+}
+function persDe(id) {
+  if (!personalizacao[id]) personalizacao[id] = { on: false, nome: '', numero: '' };
+  return personalizacao[id];
+}
+function precoComPers(p, pers) { return p.preco + (pers.on ? VALOR_PERSONALIZACAO : 0); }
+
+function tamanhosDe(p) {
+  return /\bInfantil\b/.test(p.nome) ? TAMANHOS_INFANTIL : TAMANHOS;
+}
+function htmlTams(p) {
+  const sel = escolhas[p.id] || '';
+  return `<div class="tams" role="group" aria-label="Tamanhos">${tamanhosDe(p).map((t) => `<button type="button" aria-pressed="${t === sel}" data-size="${t}" data-id="${p.id}">${t}</button>`).join('')}</div>`;
+}
+function htmlPers(p) {
+  const pers = persDe(p.id);
+  return `<div class="pers">
+      <label class="on"><input type="checkbox" data-pers-on="${p.id}" ${pers.on ? 'checked' : ''}><span>Personalizar com nome e número <b>(+ ${money(VALOR_PERSONALIZACAO)})</b></span></label>
+      ${pers.on ? `<div class="campos">
+        <label>Nome (até 12 letras)<input type="text" name="nome-${p.id}" maxlength="12" data-pers-nome="${p.id}" value="${esc(pers.nome)}" placeholder="Ex.: MESSI" autocomplete="off" spellcheck="false"></label>
+        <label>Número (1 a 99)<input type="number" name="numero-${p.id}" min="1" max="99" inputmode="numeric" data-pers-num="${p.id}" value="${esc(pers.numero)}" placeholder="Ex.: 10" autocomplete="off"></label>
+      </div>
+      <div class="erro" id="erro${p.id}" hidden></div>` : ''}
+    </div>`;
+}
+function htmlPreco(p) {
+  const pers = persDe(p.id);
+  return pers.on
+    ? `<div class="preco">${money(precoComPers(p, pers))}<small>${money(p.preco)} + personalização ${money(VALOR_PERSONALIZACAO)}</small></div>`
+    : `<div class="preco">${money(p.preco)}</div>`;
+}
+function htmlAdd(p) {
+  const sel = escolhas[p.id] || '';
+  return `<button class="pp-add" type="button" data-add="${p.id}" ${sel ? '' : 'disabled'}>${sel ? 'Adicionar ao pedido (' + sel + ')' : 'Escolha o tamanho'}</button>`;
+}
+function montarProduto(id) {
+  const alvo = document.getElementById('pagina-produto');
+  const p = todos.find((x) => String(x.id) === String(id));
+  if (!p) {
+    alvo.innerHTML = '<a class="pp-voltar" href="#/">← Voltar ao catálogo</a><p>Camisa não encontrada.</p>';
+    alvo.removeAttribute('data-cardroot');
+    document.title = 'Camisa não encontrada · Mantoz Fut';
+    return;
+  }
+  const secoes = descricaoCompleta(p);
+  const brinde = modoBrinde && ehTorcedor(p) && vagasBrinde() > 0;
+  const estoque = p.consultarEstoque ? '<div class="pp-estoque">⚠️ Esta camisa é de temporada passada: confirmamos a disponibilidade antes de fechar o pedido.</div>' : '';
+  const thumbs = p.fotos.length > 1 ? `<div class="pp-thumbs" aria-label="Todas as fotos">${p.fotos.map((f, i) => `<button type="button" aria-label="Foto ${i + 1}" aria-pressed="${i === 0}" data-pp-foto="${i}"><img loading="lazy" width="72" height="72" src="${esc(f)}" alt=""></button>`).join('')}</div>` : '';
+  alvo.innerHTML = `
+    <a class="pp-voltar" href="#/">← Voltar ao catálogo</a>
+    <div class="pp-grid">
+      <div class="pp-galeria">
+        <div class="pp-foto-principal"><button type="button" id="ppZoom" data-zoom="${p.id}" data-i="0" aria-label="Ampliar foto"><img id="ppImg" src="${esc(p.fotos[0] || '')}" alt="${esc(p.nome)}" width="800" height="800" fetchpriority="high"></button></div>
+        ${thumbs}
+      </div>
+      <div class="pp-info">
+        <div class="pp-meta">${esc(p.liga)} · ${esc(p.temporada) || 'sem temporada'} · ${esc(versao(p))}</div>
+        <h2 class="pp-nome">${esc(p.nome)}</h2>
+        <div class="pp-preco" data-bloco="preco">${htmlPreco(p)}</div>
+        ${brinde ? '<div class="pp-brinde">🎁 Esta camisa vai entrar no seu pedido como brinde da promoção.</div>' : ''}
+        ${estoque}
+        <div>
+          <div class="pp-tams-tit">Escolha o tamanho <a class="link" href="#/tamanhos">Não sei meu tamanho</a></div>
+          <div data-bloco="tams">${htmlTams(p)}</div>
+        </div>
+        <div data-bloco="pers">${htmlPers(p)}</div>
+        <div data-bloco="add">${htmlAdd(p)}</div>
+      </div>
+    </div>
+    <section class="pp-descricao" aria-label="Detalhes do produto">
+      <h3>Detalhes do produto</h3>
+      ${secoes.map((s) => `<div class="secao"><h4>${esc(s.titulo)}</h4>${s.texto ? `<p>${esc(s.texto)}</p>` : ''}${s.itens && s.itens.length ? `<ul>${s.itens.map((i) => `<li>${esc(i)}</li>`).join('')}</ul>` : ''}</div>`).join('')}
+    </section>
+  `;
+  alvo.setAttribute('data-cardroot', p.id);
+  document.title = p.nome + ' · Mantoz Fut';
+}
+
+function card(p, pos) {
+  const destaque = pos < 4;
+  const entrada = primeira && pos < 6;
+  return `<article class="card${entrada ? ' entra' : ''}" style="${entrada ? '--i:' + pos : ''}" id="produto-${p.id}">
+    <a class="card-link" href="#/produto/${p.id}">
+      <div class="main"><img src="${esc(p.fotos[0] || '')}" alt="${esc(p.nome)}" width="400" height="400" loading="${destaque ? 'eager' : 'lazy'}"${destaque ? ' fetchpriority="high"' : ''}></div>
+      <div class="corpo">
+        <div class="meta">${esc(p.liga)} · ${esc(p.temporada) || 'sem temporada'} · ${esc(versao(p))}</div>
+        <div class="nome">${esc(p.nome)}</div>
+        <div class="preco">${money(p.preco)}</div>
+      </div>
+    </a>
+  </article>`;
+}
+
+function render(reset) {
+  const grid = document.getElementById('grid');
+  if (reset) { mostrando = 0; grid.innerHTML = ''; }
+  const fatia = filtrados.slice(mostrando, mostrando + PAGE);
+  if (!filtrados.length && reset) grid.innerHTML = '<div class="vazio">Nenhuma camisa encontrada. Tente outro time ou toque em “Todas”.</div>';
+  else grid.insertAdjacentHTML('beforeend', fatia.map((p, i) => card(p, mostrando + i)).join(''));
+  mostrando += fatia.length;
+  document.getElementById('mais').hidden = mostrando >= filtrados.length;
+  document.getElementById('info').textContent = filtrados.length + (filtrados.length === 1 ? ' camisa' : ' camisas');
+  revelarCards([...grid.querySelectorAll('.card:not(.entra)')]);
+}
+function refazerCard(id) {
+  const p = todos.find((x) => String(x.id) === String(id));
+  const el = document.querySelector(`[data-cardroot="${id}"]`);
+  if (!p || !el) return;
+  const foco = document.activeElement && document.activeElement.dataset ? document.activeElement.dataset.persOn : undefined;
+  const partes = { preco: htmlPreco(p), tams: htmlTams(p), pers: htmlPers(p), add: htmlAdd(p) };
+  for (const [nome, html] of Object.entries(partes)) {
+    const bloco = el.querySelector(`[data-bloco="${nome}"]`);
+    if (bloco) bloco.innerHTML = html;
+  }
+  if (foco !== undefined) {
+    const cb = el.querySelector(`[data-pers-on="${foco}"]`);
+    if (cb) cb.focus();
+  }
+}
+
+function aplicar() {
+  const termo = document.getElementById('q').value.trim().toLowerCase();
+  filtrados = todos.filter((p) => {
+    if (ligaAtiva && p.liga !== ligaAtiva) return false;
+    if (tipoAtivo === 'lancamentos' && p.temporada !== '2026/27' && p.temporada !== '2026') return false;
+    if (tipoAtivo === 'selecoes' && p.liga !== 'Seleções') return false;
+    if (tipoAtivo === 'player' && p.categoria !== 'Camisa Player') return false;
+    if (tipoAtivo === 'torcedor' && p.categoria !== 'Camisa Torcedor') return false;
+    if (tipoAtivo === 'retro' && p.categoria !== 'Camisa Retrô') return false;
+    if (tipoAtivo === 'feminina' && !/\bFeminina\b/.test(p.nome)) return false;
+    if (tipoAtivo === 'infantil' && !/\bInfantil\b|\bBebê\b/.test(p.nome)) return false;
+    if (!termo) return true;
+    return (p.nome + ' ' + p.time + ' ' + p.liga + ' ' + p.temporada + ' ' + p.categoria).toLowerCase().includes(termo);
+  });
+  document.getElementById('hero').hidden = !!(tipoAtivo || ligaAtiva || termo);
+  if (ordemAtual === 'menor') filtrados.sort((a, b) => a.preco - b.preco);
+  else if (ordemAtual === 'maior') filtrados.sort((a, b) => b.preco - a.preco);
+  else if (ordemAtual === 'recentes') filtrados.sort((a, b) => (anoDe(b) - anoDe(a)) || a.nome.localeCompare(b.nome, 'pt-BR'));
+  else if (ligaAtiva) filtrados.sort(rankPopularidade);
+  else filtrados = intercalarPopularidade(filtrados.sort(rankPopularidade));
+  render(true);
+}
+
+
+document.getElementById('heroLanc').addEventListener('click', () => {
+  document.querySelector('.menu button[data-tipo="lancamentos"]').click();
+  document.querySelector('.barra').scrollIntoView({ block: 'start' });
+});
+function montarLigas() {
+  const ligas = [...new Set(todos.map((p) => p.liga))].sort((a, b) => a.localeCompare(b, 'pt-BR'));
+  document.getElementById('ligas').innerHTML = ['Todas as ligas', ...ligas].map((l) => {
+    const valor = l === 'Todas as ligas' ? '' : l;
+    return `<button type="button" aria-pressed="${valor === ligaAtiva}" data-liga="${esc(valor)}">${esc(l)}</button>`;
+  }).join('');
+}
+document.querySelector('.menu').addEventListener('click', (e) => {
+  const b = e.target.closest('button[data-tipo]');
+  if (!b) return;
+  cancelarBrinde();
+  if (location.hash.startsWith('#/tamanhos') || location.hash.startsWith('#/produto')) location.hash = '#/';
+  tipoAtivo = b.dataset.tipo;
+  document.querySelectorAll('.menu button[data-tipo]').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+  aplicar();
+});
+document.querySelector('.rodape').addEventListener('click', (e) => {
+  const a = e.target.closest('[data-tipo-rodape]');
+  if (!a) return;
+  tipoAtivo = a.dataset.tipoRodape;
+  document.querySelectorAll('.menu button[data-tipo]').forEach((x) => x.setAttribute('aria-pressed', String(x.dataset.tipo === tipoAtivo)));
+  location.hash = '#/';
+  aplicar();
+});
+document.getElementById('ligas').addEventListener('click', (e) => {
+  const b = e.target.closest('button[data-liga]');
+  if (!b) return;
+  ligaAtiva = b.dataset.liga;
+  document.querySelectorAll('#ligas button').forEach((c) => c.setAttribute('aria-pressed', String(c === b)));
+  aplicar();
+});
+document.getElementById('ordem').addEventListener('change', (e) => { ordemAtual = e.target.value; aplicar(); });
+document.getElementById('mais').addEventListener('click', () => render(false));
+let timer;
+document.getElementById('q').addEventListener('input', () => { clearTimeout(timer); timer = setTimeout(aplicar, 150); });
+
+// ---------- rotas ----------
+function rota() {
+  const h = location.hash;
+  const emTamanhos = h.startsWith('#/tamanhos');
+  const mProd = h.match(/^#\/produto\/(\d+)/);
+  const emProduto = !!mProd;
+  const emVitrine = !emTamanhos && !emProduto;
+  document.getElementById('vitrine').hidden = !emVitrine;
+  document.getElementById('pagina-tamanhos').hidden = !emTamanhos;
+  document.getElementById('pagina-produto').hidden = !emProduto;
+  document.querySelector('.menu [data-rota]').setAttribute('aria-current', String(emTamanhos));
+  if (emTamanhos) { montarTabela('torcedor'); window.scrollTo(0, 0); }
+  if (emProduto) { montarProduto(mProd[1]); window.scrollTo(0, 0); }
+  if (!emProduto) document.title = 'Catálogo Mantoz Fut';
+}
+window.addEventListener('hashchange', rota);
+
+function montarTabela(versaoSel) {
+  const t = TABELA[versaoSel];
+  document.getElementById('tabelaTam').innerHTML = `<table>
+    <thead><tr><th>Medida (cm)</th>${TAMANHOS.map((s) => `<th>${s}</th>`).join('')}</tr></thead>
+    <tbody>${t.linhas.map(([n, vals]) => `<tr><td>${esc(n)}</td>${vals.map((v) => `<td>${v}</td>`).join('')}</tr>`).join('')}</tbody></table>`;
+  document.getElementById('explicaVersao').innerHTML = `<p><b>${versaoSel === 'jogador' ? 'Versão Jogador' : 'Versão Torcedor'}:</b> ${esc(t.texto)}</p>
+    <p>Medidas aproximadas, podem variar de 1 a 2 cm.</p>`;
+  document.querySelectorAll('#pagina-tamanhos [data-versao]').forEach((b) => b.setAttribute('aria-selected', String(b.dataset.versao === versaoSel)));
+}
+document.querySelectorAll('#pagina-tamanhos [data-versao]').forEach((b) => b.addEventListener('click', () => montarTabela(b.dataset.versao)));
+
+// ---------- carrinho ----------
+const overlay = document.getElementById('overlay');
+let pedidoOrigem = null;
+function abrirPedido() { pedidoOrigem = document.activeElement; overlay.classList.add('open'); atualizarCarrinho(); document.getElementById('fecharPedido').focus(); }
+function fecharPedido() { overlay.classList.remove('open'); if (pedidoOrigem) pedidoOrigem.focus(); pedidoOrigem = null; }
+function prenderFoco(e) {
+  const itens = [...overlay.querySelectorAll('button, a[href]')];
+  const primeiro = itens[0];
+  const ultimo = itens[itens.length - 1];
+  if (e.shiftKey && document.activeElement === primeiro) { e.preventDefault(); ultimo.focus(); }
+  else if (!e.shiftKey && document.activeElement === ultimo) { e.preventDefault(); primeiro.focus(); }
+}
+document.getElementById('abrirPedido').addEventListener('click', abrirPedido);
+document.getElementById('fecharPedido').addEventListener('click', fecharPedido);
+overlay.addEventListener('click', (e) => { if (e.target === overlay) fecharPedido(); });
+
+function salvarCarrinho() {
+  try { localStorage.setItem('mantoz_catalogo_carrinho', JSON.stringify(carrinho)); } catch (e) {}
+  atualizarCarrinho();
+}
+function descricaoPers(l) {
+  const partes = [];
+  if (l.persNome) partes.push('Nome: ' + l.persNome);
+  if (l.persNumero) partes.push('Nº ' + l.persNumero);
+  return partes.join(' · ');
+}
+function atualizarCarrinho() {
+  ajustarBrindes();
+  const qtd = carrinho.reduce((s, l) => s + l.qtd, 0);
+  const total = carrinho.reduce((s, l) => s + l.preco * l.qtd, 0);
+  const contador = document.getElementById('cartCount');
+  if (qtdAnterior !== null && qtd !== qtdAnterior) {
+    contador.classList.remove('bump');
+    void contador.offsetWidth;
+    contador.classList.add('bump');
+  }
+  qtdAnterior = qtd;
+  contador.textContent = qtd;
+  document.getElementById('pedidoTotal').textContent = money(total);
+  document.getElementById('pedidoCorpo').innerHTML = (carrinho.length ? carrinho.map((l) => `
+    <div class="linha-item">
+      <img loading="lazy" src="${esc(l.foto)}" alt="" width="60" height="60">
+      <div>
+        <div class="t">${esc(l.nome)}</div>
+        <div class="s">Tamanho ${esc(l.tamanho)}</div>
+        ${l.gratis ? '<div class="s">Brinde da promoção: compre 4 Torcedor, leve 1</div>' : ''}
+        ${descricaoPers(l) ? `<div class="s">Personalização: ${esc(descricaoPers(l))} (+ ${money(VALOR_PERSONALIZACAO)})</div>` : ''}
+        <div class="p">${l.gratis ? (l.preco ? money(l.preco) + ' (só a personalização)' : 'Grátis') : money(l.preco) + ' cada'}</div>
+        <div class="qtd">
+          <button class="q" type="button" data-dec="${esc(l.key)}" aria-label="Diminuir">−</button>
+          <span>${l.qtd}</span>
+          <button class="q" type="button" data-inc="${esc(l.key)}" aria-label="Aumentar">+</button>
+          <button type="button" class="rm" data-rm="${esc(l.key)}">Remover</button>
+        </div>
+      </div>
+    </div>`).join('') : '<p class="nota">Seu pedido está vazio. Escolha uma camisa e o tamanho para adicionar.</p>');
+  document.getElementById('pedidoNota').innerHTML = '';
+  const texto = qtd ? textoPedido() : '';
+  for (const [id, num] of [['enviaBur', WA_BURITIS], ['enviaBsb', WA_BRASILIA]]) {
+    const a = document.getElementById(id);
+    a.setAttribute('aria-disabled', String(!qtd));
+    a.href = qtd ? 'https://wa.me/' + num + '?text=' + encodeURIComponent(texto) : '#';
+  }
+  atualizarHintPromocao();
+}
+function textoPedido() {
+  const linhas = carrinho.map((l, i) => {
+    const pers = descricaoPers(l);
+    const valor = l.gratis ? 'brinde (grátis)' : money(l.preco * l.qtd);
+    return `${i + 1}. ${l.nome} | Tamanho ${l.tamanho} | Qtd ${l.qtd} | ${valor}${pers ? ' | Personalização: ' + pers : ''}`;
+  });
+  const total = carrinho.reduce((s, l) => s + l.preco * l.qtd, 0);
+  const qtd = carrinho.reduce((s, l) => s + l.qtd, 0);
+  return 'Olá! Gostaria de fazer este pedido:\n' + linhas.join('\n') + '\nTotal estimado: ' + money(total) + '\nPodem confirmar disponibilidade e pagamento?';
+}
+// promoção: a cada 4 camisas pagas, 1 camisa Torcedor de brinde
+let modoBrinde = false;
+const ehTorcedor = (p) => p.categoria === 'Camisa Torcedor';
+function pagasNoCarrinho() {
+  return carrinho.filter((l) => !l.gratis).reduce((s, l) => s + l.qtd, 0);
+}
+function vagasBrinde() {
+  const usados = carrinho.filter((l) => l.gratis).reduce((s, l) => s + l.qtd, 0);
+  return Math.floor(pagasNoCarrinho() / 4) - usados;
+}
+function atualizarHintPromocao() {
+  const vagas = vagasBrinde();
+  const pagas = pagasNoCarrinho();
+  const falta = pagas > 0 ? 4 - (pagas % 4) : 0;
+  const bar = document.getElementById('hintPromo');
+  if (!bar) return;
+  if (vagas > 0) {
+    bar.innerHTML = `<span>Você ganhou uma camisa Torcedor grátis.</span><button type="button" data-brinde="1">Escolher Torcedor grátis</button>`;
+    bar.hidden = false;
+  } else if (pagas > 0 && falta < 4) {
+    bar.innerHTML = `<span>Falta${falta === 1 ? '' : 'm'} <b>${falta}</b> ${falta === 1 ? 'camisa' : 'camisas'} para ganhar uma Torcedor grátis.</span>`;
+    bar.hidden = false;
+  } else {
+    bar.hidden = true;
+  }
+}
+function ajustarBrindes() {
+  while (vagasBrinde() < 0) {
+    const g = carrinho.find((l) => l.gratis);
+    if (g.qtd > 1) g.qtd -= 1;
+    else carrinho = carrinho.filter((l) => l !== g);
+  }
+}
+function iniciarBrinde() {
+  modoBrinde = true;
+  overlay.classList.remove('open');
+  tipoAtivo = 'torcedor';
+  if (location.hash.startsWith('#/tamanhos') || location.hash.startsWith('#/produto')) location.hash = '#/';
+  document.querySelectorAll('.menu button[data-tipo]').forEach((x) => x.setAttribute('aria-pressed', String(x.dataset.tipo === 'torcedor')));
+  document.getElementById('brindeAviso').hidden = false;
+  aplicar();
+  document.querySelector('.barra').scrollIntoView({ block: 'start' });
+}
+function cancelarBrinde() {
+  modoBrinde = false;
+  document.getElementById('brindeAviso').hidden = true;
+}
+document.getElementById('brindeCancelar').addEventListener('click', () => { cancelarBrinde(); abrirPedido(); });
+
+function adicionar(p, tam, pers) {
+  const podeSerBrinde = modoBrinde && ehTorcedor(p) && vagasBrinde() > 0;
+  const gratis = podeSerBrinde;
+  const nome = pers.on ? pers.nome.trim().toUpperCase() : '';
+  const numero = pers.on ? String(pers.numero).trim() : '';
+  const key = [p.id, tam, nome, numero, gratis ? 'brinde' : ''].join('|');
+  const existente = carrinho.find((l) => l.key === key);
+  if (existente) existente.qtd += 1;
+  else carrinho.push({ key, id: p.id, nome: p.nome, tamanho: tam, preco: gratis ? (pers.on ? VALOR_PERSONALIZACAO : 0) : precoComPers(p, pers), foto: p.fotos[0] || '', qtd: 1, persNome: nome, persNumero: numero, torcedor: ehTorcedor(p), gratis });
+  if (gratis || modoBrinde) cancelarBrinde();
+  salvarCarrinho();
+  if (gratis) abrirPedido();
+}
+document.body.addEventListener('click', (e) => {
+  if (e.target.closest('#hintPromo [data-brinde]')) { iniciarBrinde(); }
+});
+document.getElementById('pedidoCorpo').addEventListener('click', (e) => {
+  const inc = e.target.closest('[data-inc]');
+  const dec = e.target.closest('[data-dec]');
+  const rm = e.target.closest('[data-rm]');
+  if (inc) carrinho.find((l) => l.key === inc.dataset.inc).qtd += 1;
+  if (dec) { const l = carrinho.find((x) => x.key === dec.dataset.dec); if (l.qtd > 1) l.qtd -= 1; }
+  if (rm) carrinho = carrinho.filter((l) => l.key !== rm.dataset.rm);
+  if (inc || dec || rm) salvarCarrinho();
+});
+
+// ---------- galeria ampliada ----------
+let lbFotos = [];
+let lbIdx = 0;
+let lbNome = '';
+let lbOrigem = null;
+const lb = document.getElementById('lightbox');
+function lbMostrar() {
+  const img = document.getElementById('lbImg');
+  img.src = lbFotos[lbIdx];
+  img.alt = lbNome;
+  document.getElementById('lbCount').textContent = (lbIdx + 1) + ' / ' + lbFotos.length;
+  document.getElementById('lbPrev').hidden = lbIdx === 0;
+  document.getElementById('lbNext').hidden = lbIdx >= lbFotos.length - 1;
+}
+function lbMover(d) { const n = lbIdx + d; if (n < 0 || n >= lbFotos.length) return; lbIdx = n; lbMostrar(); }
+function abrirLightbox() { lbOrigem = document.activeElement; lb.classList.add('open'); document.getElementById('lbClose').focus(); }
+function fecharLightbox() { lb.classList.remove('open'); if (lbOrigem) lbOrigem.focus(); lbOrigem = null; }
+document.getElementById('lbPrev').addEventListener('click', (e) => { e.stopPropagation(); lbMover(-1); });
+document.getElementById('lbNext').addEventListener('click', (e) => { e.stopPropagation(); lbMover(1); });
+let toqueX = null;
+const lbImgEl = document.getElementById('lbImg');
+lbImgEl.addEventListener('touchstart', (e) => { toqueX = e.touches[0].clientX; }, { passive: true });
+lbImgEl.addEventListener('touchend', (e) => { if (toqueX === null) return; const dx = e.changedTouches[0].clientX - toqueX; toqueX = null; if (Math.abs(dx) > 40) lbMover(dx < 0 ? 1 : -1); });
+lb.addEventListener('click', (e) => { if (e.target === lb || e.target.id === 'lbClose') fecharLightbox(); });
+document.addEventListener('keydown', (e) => {
+  const aberto = lb.classList.contains('open');
+  if (e.key === 'Escape') { if (aberto) fecharLightbox(); else if (overlay.classList.contains('open')) fecharPedido(); }
+  if (aberto && e.key === 'ArrowRight') lbMover(1);
+  if (aberto && e.key === 'ArrowLeft') lbMover(-1);
+  if (e.key === 'Tab' && overlay.classList.contains('open')) prenderFoco(e);
+});
+
+// ---------- interações da página do produto ----------
+const paginaProduto = document.getElementById('pagina-produto');
+paginaProduto.addEventListener('click', (e) => {
+  const zoom = e.target.closest('button[data-zoom]');
+  if (zoom) {
+    const p = todos.find((x) => String(x.id) === zoom.dataset.zoom);
+    lbFotos = p.fotos; lbNome = p.nome; lbIdx = Number(zoom.dataset.i) || 0; lbMostrar();
+    abrirLightbox();
+    return;
+  }
+  const foto = e.target.closest('button[data-pp-foto]');
+  if (foto) {
+    const idx = Number(foto.dataset.ppFoto);
+    const p = todos.find((x) => String(x.id) === paginaProduto.getAttribute('data-cardroot'));
+    document.getElementById('ppImg').src = p.fotos[idx];
+    document.getElementById('ppZoom').dataset.i = idx;
+    foto.parentElement.querySelectorAll('button').forEach((x) => x.setAttribute('aria-pressed', String(x === foto)));
+    return;
+  }
+  const tam = e.target.closest('button[data-size]');
+  if (tam) {
+    const id = tam.dataset.id;
+    if (escolhas[id] === tam.dataset.size) delete escolhas[id];
+    else escolhas[id] = tam.dataset.size;
+    refazerCard(id);
+    return;
+  }
+  const add = e.target.closest('button[data-add]');
+  if (add) {
+    const id = add.dataset.add;
+    const p = todos.find((x) => String(x.id) === id);
+    const tamanho = escolhas[id];
+    const pers = persDe(id);
+    if (!tamanho) return;
+    if (pers.on && !pers.nome.trim() && !String(pers.numero).trim()) {
+      const erro = document.getElementById('erro' + id);
+      if (erro) { erro.textContent = 'Preencha o nome, o número ou os dois para personalizar.'; erro.hidden = false; }
+      return;
+    }
+    adicionar(p, tamanho, pers);
+    document.getElementById('aviso').textContent = p.nome + ', tamanho ' + tamanho + ', adicionado ao pedido.';
+    add.textContent = 'Adicionado ✓';
+    add.classList.add('ok');
+    setTimeout(() => { if (add.isConnected) { add.textContent = 'Adicionar ao pedido (' + tamanho + ')'; add.classList.remove('ok'); } }, 1200);
+  }
+});
+paginaProduto.addEventListener('change', (e) => {
+  const cb = e.target.closest('[data-pers-on]');
+  if (!cb) return;
+  persDe(cb.dataset.persOn).on = cb.checked;
+  refazerCard(cb.dataset.persOn);
+});
+paginaProduto.addEventListener('input', (e) => {
+  const nome = e.target.closest('[data-pers-nome]');
+  const num = e.target.closest('[data-pers-num]');
+  if (nome) { const pers = persDe(nome.dataset.persNome); pers.nome = nome.value.toUpperCase(); nome.value = pers.nome; }
+  if (num) {
+    const pers = persDe(num.dataset.persNum);
+    let v = String(num.value).replace(/[^0-9]/g, '');
+    if (v !== '' && (Number(v) < 1 || Number(v) > 99)) v = v.slice(0, 2);
+    pers.numero = v; num.value = v;
+  }
+});
+
+
+// IntersectionObserver para animação de entrada dos cards
+const revelarCards = (() => {
+  const reduzido = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const io = new IntersectionObserver((entradas) => {
+    entradas.forEach((e) => {
+      if (!e.isIntersecting) return;
+      const el = e.target;
+      const d = Number(el.dataset.revDelay || 0);
+      if (d) setTimeout(() => el.classList.add('entra'), d);
+      else el.classList.add('entra');
+      io.unobserve(el);
+    });
+  }, { threshold: 0.06 });
+  return (novos) => {
+    if (reduzido) { novos.forEach((el) => el.classList.add('entra')); return; }
+    novos.forEach((el, i) => {
+      if (!el.classList.contains('entra')) {
+        el.dataset.revDelay = Math.min(i, 5) * 65;
+        io.observe(el);
+      }
+    });
+  };
+})();
+
+fetch('produtos.json', { cache: 'no-store' })
+  .then((r) => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+  .then((data) => {
+    todos = data;
+    montarLigas();
+    rota();
+    aplicar();
+    primeira = false;
+    atualizarCarrinho();
+  })
+  .catch(() => {
+    document.getElementById('grid').innerHTML = '<div class="vazio">Não foi possível carregar as camisas. Atualize a página para tentar de novo.</div>';
+  });
+</script>
+</body>
+</html>
